@@ -1,5 +1,7 @@
 import StoreProvider from '@/redux/provider/StoreProvider.js';
 import './globals.css';
+import Navbar from '@/components/reuseable/Navbar/Navbar';
+import SideBarContainer from '@/components/reuseable/SideBar/SideBarContainer';
 
 export const metadata = {
   title: 'Create Next App',
@@ -10,7 +12,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <StoreProvider>{children}</StoreProvider>
+        <StoreProvider>
+          <SideBarContainer>
+            <Navbar />
+            {children}
+          </SideBarContainer>
+        </StoreProvider>
       </body>
     </html>
   );
