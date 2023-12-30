@@ -12,7 +12,7 @@ function SideBarContainer({ children }) {
       <div
         className={`${
           SideBarStatus ? 'ml-[250px]' : 'ml-0'
-        } transition-all duration-300 ease-linear`}
+        } transition-all duration-200 ease-linear`}
       >
         {children}
       </div>
