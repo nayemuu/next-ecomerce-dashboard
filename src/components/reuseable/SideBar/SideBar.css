@@ -7,6 +7,6 @@
   overflow: auto;
   z-index: 2;
   position: fixed;
-  background-color: #1c2434;
   padding: 8px;
+  background-color: #fff;
 }
